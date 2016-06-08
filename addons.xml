@@ -46,14 +46,14 @@
   </extension>
 </addon>
 
-<addon id="repository.javi-team" name="Javi-Team Repository" version="1.0.0" provider-name="JAVITEAM">
-	<extension point="xbmc.addon.repository" name="PLD Addon Repository">
-            <info compressed="false">https://raw.githubusercontent.com/grupopld/repository.pld/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/grupopld/repository.pld/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/grupopld/repository.pld/master/zips</datadir>
+<addon id="repository.javi-team" name="Javi-Team Repository" version="1.0.0" provider-name="JAVI-TEAM">
+	<extension point="xbmc.addon.repository" name="JAVI-TEAM Repository">
+            <info compressed="false">https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/zips</datadir>
 	</extension>
     <extension point="xbmc.addon.metadata">
-		<summary>Addons related to XBMC </summary>
+		<summary>Repositorio de Addons JAVI_-TEAM</summary>
 		<description>Go though the plugins and see what you like</description>
 		<platform>all</platform>
 	</extension>
