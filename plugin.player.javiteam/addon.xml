@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.player.javiteam" version="1.0.2" name="[COLOR lime]PLAYER-JAVITEAM[/COLOR]" provider-name="JAVITEAM">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.1.7"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>JAVITEAM</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
