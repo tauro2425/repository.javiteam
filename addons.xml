@@ -48,6 +48,7 @@
      <import addon="script.module.livestreamer" optional="true"/>
      <import addon="script.module.pyamf" optional="true"/>
 	 <import addon="plugin.player.javiteam" version="1.0.2"/>
+	 <import addon="plugin.video.SportsDevil" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -58,6 +59,30 @@
          [COLOR lime] ESTE PLUGIN A SIDO MODIFICADO POR JAVI ES PARA SU USO PERSONAL NO ME HAGO RESPONSABLE DEL USO QUE SE LE DE.SALUDOS[/COLOR]
 
     </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2.0.4.3"
+  name="[COLOR blue]SportsDevil.Bypld[/COLOR]"
+  provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <import addon="script.module.pydevd" optional="true"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>[COLOR lime]EL GRUPO Y COLABORADORES DE[/COLOR] [COLOR blue]PLD[/COLOR]</summary>
+    <description>[COLOR lime]ESTE PLUGIN A SIDO ACTUALIZADO POR EL GRUPO Y COLABORADORES DE[/COLOR] [COLOR blue]PLD[/COLOR]</description>
+	<description>[COLOR lime]FECHA ACTUALIZACION 30-5-2016[/COLOR]</description>
     <platform>all</platform>
   </extension>
 </addon>
