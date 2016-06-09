@@ -15,49 +15,43 @@ item_info_from=pageUrl
 item_info_convert=getInfo('%s','.*var\s*\w+\s*=\s*"([^'"]*)".*?var\s*\w+\s*=\s*"([^'"]+).*?var\s*\w+\s*=\s*"([^'"]+).*','@REFERER@','ssx1|ssx4|tk')
 item_info_build=%s
 
-item_info_name=alt_tmp
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*function\s+getHAGE.*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*','@REFERER@','s1|s2|s3|s4')
-item_info_build=%s
+#item_info_name=alt_tmp
+#item_info_from=pageUrl
+#item_info_convert=getInfo('%s','.*getHAGE.*?(?:\w+)\s+=.*?'([^']+).*?(?:\w+)\s+=.*?'([^']+).*?(?:\w+)\s+=.*?'([^']+).*?(?:\w+)\s+=.*?'([^']+).*','@REFERER@', 'xaf1_tmp|gada_tmp|tkne_tmp')
+#item_info_build=%s
 
 item_info_name=xaf1
-item_info_from=s1
-#item_info_convert=debug
+item_info_from=xaf1_tmp
+item_info_convert=debug
 item_info_build=.*id="%s"\s*value="([^'"]*)
 
 item_info_name=gada
-item_info_from=s2
-#item_info_convert=debug
-item_info_build=.*id="%s"\s*value="([^'"]*)
-
-item_info_name=thas
-item_info_from=s3
-#item_info_convert=debug
+item_info_from=gada_tmp
+item_info_convert=debug
 item_info_build=.*id="%s"\s*value="([^'"]*)
 
 item_info_name=tkne
-item_info_from=s4
-#item_info_convert=debug
+item_info_from=tkne_tmp
+item_info_convert=debug
 item_info_build=.*id="%s"\s*value="([^'"]*)
 
 item_info_name=alt_ssx1
 item_info_from=pageUrl
 item_info_convert=getInfo('%s','@xaf1@','@REFERER@')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 item_info_name=alt_ssx4
 item_info_from=pageUrl
 item_info_convert=getInfo('%s','@gada@','@REFERER@')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 item_info_name=alt_tk
 item_info_from=pageUrl
 item_info_convert=getInfo('%s','@tkne@','@REFERER@')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
-
 
 item_info_name=tk1
 item_info_from=tk || alt_tk

@@ -1,7 +1,3 @@
-v 2.0.4.3 (04-06-16)
+v 2.0.4.4 (9-jul-16)
 ------------------------------
-- Fix: iLive (thanks to L2501)
-- New: StreamHD in Sports TV
-- New: HitSports in Sports TV
-- Some minor fixes and catcher updates (thanks to L2501)
-
+- actualizacion PLD
