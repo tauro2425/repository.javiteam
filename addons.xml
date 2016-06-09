@@ -48,7 +48,7 @@
      <import addon="script.module.livestreamer" optional="true"/>
      <import addon="script.module.pyamf" optional="true"/>
 	 <import addon="plugin.player.javiteam" version="1.0.2"/>
-	 <import addon="plugin.video.SportsDevil" version="2.0.4.5"/>
+	 <import addon="plugin.video.SportsDevil" version="2.0.4.4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -65,8 +65,8 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2.0.4.5"
-  name="SportsDevil.Bypld"
+  version="2.0.4.4"
+  name="[COLOR blue]SportsDevil.Bypld[/COLOR]"
   provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
