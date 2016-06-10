@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pepecine</id>
+	<name>Pepecine</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>true</active>
+	<include_in_global_search>false</include_in_global_search>
+	<version>1.3</version>
+	<adult>false</adult>
+	<date>14/01/16</date>
+	<changes>Corregido el idioma en la seccion Ultimos capitulos</changes>
+	</changes>
+	<fanart>https://d12.usercdn.com/i/02278/u875vjx9c0xs.png</fanart>
+	<thumbnail>https://d12.usercdn.com/i/02278/nwm6todp6yyk.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/pepecine.png</bannermenu>
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+</channel>

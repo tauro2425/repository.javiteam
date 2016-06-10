@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>cinetube</id>
+	<name>Cinetube</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>false</active>
+	<version>16</version>
+	<adult>false</adult>
+	<date>19/05/2013</date>
+	<changes>Añadidas series, documentales y anime a cinetube (Gracias a prunk)</changes>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>anime</category>
+		<category>documentary</category>
+	</categories>
+	<settings>
+		<include_in_global_search>false</include_in_global_search>
+	</settings>
+</channel>

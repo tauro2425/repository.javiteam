@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>descargasmix</id>
+	<name>DescargasMIX</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>true</active>
+	<include_in_global_search>false</include_in_global_search>
+	<version>3</version>
+	<adult>false</adult>
+	<date>26/03/2016</date>
+	<changes>Reparado el canal ya que fallaba en la opcion Series y se incluye soporte para la biblioteca</changes>
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/tBTqIlV.jpg?1</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/descargasmix.png</bannermenu>
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+		<category>vos</category>
+		<category>torrent</category>
+		<category>documentary</category>
+		<category>anime</category>
+		<category>serie</category>
+	</categories>
+</channel>

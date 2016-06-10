@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>hdfull</id>
+	<name>HDFull</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/hdfull.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/hdfull.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<date>25/02/2016</date>
+	<changes>Cambios en findvideos para que muestre solo los servidores que tienen conector y se oculten los premium si esta marcada esa opcion</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>true</include_in_global_search>
+	</settings>
+</channel>

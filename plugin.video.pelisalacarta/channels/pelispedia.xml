@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelispedia</id>
+	<name>PelisPedia</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart>http://i.imgur.com/9QbyJrf.jpg</fanart>
+	<thumbnail>http://i.imgur.com/g3QiMOs.png</thumbnail>
+	<bannermenu></bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>1</version>
+	<date>20/03/2016</date>
+	<changes>Nuevo canal</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>true</include_in_global_search>
+	</settings>
+</channel>

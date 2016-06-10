@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>peliserie</id>
+	<name>Peliserie</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>false</active>
+	<include_in_global_search>false</include_in_global_search>
+	<version>3</version>
+	<adult>false</adult>
+	<date>18/03/2015</date>
+	<changes>Corregido bug syntax error en TMDB</changes>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+</channel>

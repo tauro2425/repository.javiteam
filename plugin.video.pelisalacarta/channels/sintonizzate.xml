@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>sintonizzate</id>
+	<name>Sintonizzate.me</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>false</active>
+	<include_in_global_search>false</include_in_global_search>
+	<version>0</version>
+	<adult>true</adult>
+	<date></date>
+	<changes></changes>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<categories>
+		<category>movie</category>
+		<category>adult</category>
+	</categories>
+</channel>

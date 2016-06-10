@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>mcanime</id>
+	<name>MCAnime</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>false</active>
+	<include_in_global_search>false</include_in_global_search>
+	<version>0</version>
+	<adult>false</adult>
+	<date></date>
+	<changes></changes>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<categories>
+		<category>anime</category>
+	</categories>
+</channel>

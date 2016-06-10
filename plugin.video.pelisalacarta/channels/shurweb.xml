@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>shurweb</id>
+	<name>Shurweb</name>
+
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/shurweb.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/shurweb.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>6</version>
+	<date>16/02/2014</date>
+	<changes>Corregido para funcionar con el nuevo dominio</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>documentary</category>
+		<category>anime</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>false</include_in_global_search>
+	</settings>
+</channel>

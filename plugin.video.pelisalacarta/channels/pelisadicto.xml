@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelisadicto</id>
+	<name>Pelisadicto</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/pelisadicto.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/pelisadicto.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>4</version>
+	<date>18/02/2015</date>
+	<changes>Eliminado del patrn calidad de las fichas.</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>false</include_in_global_search>
+	</settings>
+</channel>

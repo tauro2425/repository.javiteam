@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>documaniatv</id>
+	<name>DocumaniaTV</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/documaniatv.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/documaniatv.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>8</version>
+	<date>22/03/2016</date>
+	<changes>Reparada busqueda</changes>
+
+	<categories>
+		<category>documentary</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>true</include_in_global_search>
+	</settings>
+</channel>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>inkapelis</id>
+	<name>Inkapelis</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/I7MxHZI.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/inkapelis.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<date>16/01/2016</date>
+	<changes>Corregido por cambios en el enmascaramiento de enlaces</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>vos</category>
+		<category>latino</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>false</include_in_global_search>
+	</settings>
+</channel>

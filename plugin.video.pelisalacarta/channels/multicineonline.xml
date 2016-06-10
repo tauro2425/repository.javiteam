@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+    <id>multicineonline</id>
+    <name>Multicineonline</name>
+    <active>true</active>
+    <adult>false</adult>
+    <language>es</language>
+    
+    <fanart></fanart>
+    <thumbnail>http://s6.postimg.org/7i5tnyc9d/sinluceslogo2.png</thumbnail>
+    <bannermenu></bannermenu>
+    
+    <update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+    <version>1</version>
+    <date>24/02/2016</date>
+    <changes>Antiguo Sinluces Cambio de nombre a Multicineonline</changes>
+    
+    <categories>
+        <category>movie</category>
+    </categories>
+    
+    <settings>
+        <include_in_global_search>True</include_in_global_search>
+    </settings>
+</channel>

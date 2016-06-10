@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>peliculasaudiolatino</id>
+	<name>Peliculasaudiolatino</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://media.tvalacarta.info/pelisalacarta/squares/peliculasaudiolatino.png</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/peliculasaudiolatino.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>7</version>
+	<date>10/11/2014</date>
+	<changes>Añadido patrón para netu, powvideo y streaminto</changes>
+
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>true</include_in_global_search>
+	</settings>
+</channel>

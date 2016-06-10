@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelismagnet</id>
+	<name>PelisMagnet</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://scontent-mad1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12347847_1076909009009716_7103785122088615061_n.jpg?oh=7e01f94af38ae5bac10e1d02d36f695b&oe=570141FA</thumbnail>
+	<bannermenu>http://media.tvalacarta.info/pelisalacarta/bannermenu/pelismagnet.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/tvalacarta/pelisalacarta/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<date>21/02/2016</date>
+	<changes>mejoras en el menú</changes>
+
+	<categories>
+		<category>torrent</category>
+		<category>movie</category>
+		<category>serie</category>
+		<category>documentary</category>
+	</categories>
+
+	<settings>
+		<include_in_global_search>false</include_in_global_search>
+	</settings>
+</channel>
