@@ -16,7 +16,7 @@
 </addon>
 
 <addon id="plugin.stream.vaughnlive.tv"
-       name="Vaughn Live"
+       name="[COLOR orange]Vaughn Live[/COLOR]"
        version="0.1.8"
        provider-name="The[COLOR tan]Highway[/COLOR], Shani, konbon">
   <requires>
@@ -58,7 +58,7 @@
 
 <addon id="plugin.video.live.JAVI-TEAM"
        name="[COLOR red]JAVI-TEAM[/COLOR]"
-       version="1.0.8"
+       version="1.0.9"
        provider-name="[COLOR red]JAVI[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
