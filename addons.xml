@@ -77,6 +77,7 @@
 	 <import addon="plugin.video.SportsDevil" version="2.0.4.4"/>
 	 <import addon="plugin.video.pelisalacarta" version="4.0.9"/>
 	 <import addon="plugin.stream.vaughnlive.tv" version="0.1.8"/>
+	 <import addon="GUIDE_JAVI_TEAM" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -152,6 +153,29 @@
 		<description>Go though the plugins and see what you like</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.tvguidedixie" name="[COLOR lime]TV GUIDE JAVI TEAM[/COLOR]" version="1.0.0" provider-name="[COLOR lime]JAVI TEAM[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.module.elementtree" version="1.2.7"/>
+        <import addon="script.module.buggalo" version="1.1.2"/>
+        <import addon="script.tvguidedixie.tools" version="1.0.2"/>
+        <import addon="plugin.video.ontapp-player" version="0.0.2"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py"><provides>video</provides></extension>
+    <extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.service" library="service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+        <description lang="es">[COLOR blue]TV GUIDE MODIFICADA PARA EL USO PERSONAL DE [COLOR lime]JAVI [COLOR orange]/ [COLOR lime]TEAM[/COLOR]</description>
+
+        <platform>all</platform>
+        <language></language>
+        <license>GPLv2</license>
+    </extension>
 </addon>
 
 <addon id="script.video.F4mProxy"
