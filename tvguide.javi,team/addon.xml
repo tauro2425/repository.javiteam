@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="GUIDE.JAVI.TEAM" name="[COLOR lime]TV GUIDE JAVI TEAM[/COLOR]" version="1.0.1" provider-name="[COLOR lime]JAVI TEAM[/COLOR]">
+<addon id="GUIDE.JAVI.TEAM" name="[COLOR lime]TV GUIDE JAVI TEAM[/COLOR]" version="1.0.2" provider-name="[COLOR lime]JAVI TEAM[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.3.0"/>
@@ -13,7 +13,7 @@
     <extension point="xbmc.python.script" library="addon.py"/>
     <extension point="xbmc.service" library="service.py" start="login" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+        <summary lang="es">TV GUIDE JAVI TEAM</summary>
         <description lang="es">[COLOR blue]TV GUIDE MODIFICADA PARA EL USO PERSONAL DE [COLOR lime]JAVI [COLOR orange]/ [COLOR lime]TEAM[/COLOR]</description>
        
         <platform>all</platform>

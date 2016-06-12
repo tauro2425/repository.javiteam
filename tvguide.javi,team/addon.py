@@ -259,7 +259,7 @@ def main(doLogin=True):
         CheckForUpdate()
         CheckForChannels()
 
-        dixie.log('****** OnTapp.TV - All OK *******')
+        dixie.log('****** JAVI,TEAM *******')
 
         xbmcgui.Window(10000).setProperty('OTT_RUNNING', 'True')
         xbmc.executebuiltin('XBMC.ActivateWindow(home)')
