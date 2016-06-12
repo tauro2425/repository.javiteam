@@ -70,7 +70,7 @@ database    = os.path.join(datapath,   'program.db')
 def CheckVersion():
     prev = ADDON.getSetting('VERSION')
     curr = VERSION
-    dixie.log('****** JAVI TEAM ******' % str(VERSION))
+    dixie.log('****** ONTAPP.TV %s LAUNCHED ******' % str(VERSION))
 
     if prev == curr:
         return
@@ -259,7 +259,7 @@ def main(doLogin=True):
         CheckForUpdate()
         CheckForChannels()
 
-        dixie.log('****** JAVI,TEAM *******')
+        dixie.log('****** OnTapp.TV - All OK *******')
 
         xbmcgui.Window(10000).setProperty('OTT_RUNNING', 'True')
         xbmc.executebuiltin('XBMC.ActivateWindow(home)')
