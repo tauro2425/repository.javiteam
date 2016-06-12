@@ -58,7 +58,7 @@
 
 <addon id="plugin.video.live.JAVI-TEAM"
        name="[COLOR red]JAVI-TEAM[/COLOR]"
-       version="1.0.9"
+       version="1.1.0"
        provider-name="[COLOR red]JAVI[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -77,7 +77,6 @@
 	 <import addon="plugin.video.SportsDevil" version="2.0.4.4"/>
 	 <import addon="plugin.video.pelisalacarta" version="4.0.9"/>
 	 <import addon="plugin.stream.vaughnlive.tv" version="0.1.8"/>
-	 <import addon="GUIDE.JAVI.TEAM" version="1.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
