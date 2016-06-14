@@ -2157,7 +2157,7 @@ def play_playlist(name, mu_playlist,queueVideo=None):
             names = []
             for i in mu_playlist:
                 d_name=urlparse.urlparse(i).netloc
-                if d_name == 'streaming':
+                if d_name == '':
                     names.append(name)
                 else:
                     names.append(d_name)
