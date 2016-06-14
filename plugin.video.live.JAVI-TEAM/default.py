@@ -2154,7 +2154,7 @@ def play_playlist(name, mu_playlist,queueVideo=None):
 
         if addon.getSetting('ask_playlist_items') == 'true' and not queueVideo :
             import urlparse
-            names = []
+            names = [[COLOR lime]streaming[/COLOR]]
             for i in mu_playlist:
                 d_name=urlparse.urlparse(i).netloc
                 if d_name == '':
