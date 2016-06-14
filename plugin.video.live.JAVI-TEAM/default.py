@@ -2162,7 +2162,7 @@ def play_playlist(name, mu_playlist,queueVideo=None):
                 else:
                     names.append(d_name)
             dialog = xbmcgui.Dialog()
-            index = dialog.select('Choose a video source', names)
+            index = dialog.select('Abriendo Opciones JAVI / TEAM', names)
             if index >= 0:
                 if "&mode=19" in mu_playlist[index]:
                     #playsetresolved (urlsolver(mu_playlist[index].replace('&mode=19','')),name,iconimage,True)
