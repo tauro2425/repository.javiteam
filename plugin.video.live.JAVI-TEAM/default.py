@@ -2154,10 +2154,10 @@ def play_playlist(name, mu_playlist,queueVideo=None):
 
         if addon.getSetting('ask_playlist_items') == 'true' and not queueVideo :
             import urlparse
-            names = [streaming]
+            names = []
             for i in mu_playlist:
                 d_name=urlparse.urlparse(i).netloc
-                if d_name == '':
+                if d_name == 'streaming':
                     names.append(name)
                 else:
                     names.append(d_name)
