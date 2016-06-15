@@ -1,0 +1,502 @@
+# XBMC Media Center language file
+# Addon Name: FTV Guide
+# Addon id: script.ftvguide
+# Addon Provider: rayw1986, bluezed
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "No description"
+msgstr ""
+
+msgctxt "#30001"
+msgid "[B]Loading data from external source...[/B]"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Calculating remaining time..."
+msgstr ""
+
+msgctxt "#30003"
+msgid "Approximately %d seconds left..."
+msgstr ""
+
+msgctxt "#30004"
+msgid "Loading of data already in progress..."
+msgstr ""
+
+msgctxt "#30005"
+msgid "Mouse control"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Now"
+msgstr ""
+
+msgctxt "#30007"
+msgid "[B]Tip![/B] You can also use the scroll wheel"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#30009"
+msgid "No program available"
+msgstr ""
+
+#empty strings from id 30010 to 30099
+
+msgctxt "#30100"
+msgid "General"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Source"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Show channels from category"
+msgstr ""
+
+msgctxt "#30103"
+msgid "XMLTV file"
+msgstr ""
+
+msgctxt "#30104"
+msgid "Clear cache..."
+msgstr ""
+
+msgctxt "#30105"
+msgid "Done!"
+msgstr ""
+
+msgctxt "#30106"
+msgid "Show notification before selected programs start"
+msgstr ""
+
+msgctxt "#30107"
+msgid "Use program image as background"
+msgstr ""
+
+msgctxt "#30108"
+msgid "Clear all reminders..."
+msgstr ""
+
+msgctxt "#30109"
+msgid "Remember to clear the cache when you change source"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Update program information on XBMC startup"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Play channels using the YouSee web-tv addon"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Notifications"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Play channels using the Danish Live TV addon"
+msgstr ""
+
+msgctxt "#30114"
+msgid "Startup"
+msgstr ""
+
+msgctxt "#30115"
+msgid "- clear cache first"
+msgstr ""
+
+msgctxt "#30116"
+msgid "Search for channel logos in"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Show Channel Logos"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Enable OSD menu"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Disabling the OSD menu may fix video stuttering."
+msgstr ""
+
+msgctxt "#30120"
+msgid "Use alternate streaming method (required for some addons)"
+msgstr ""
+
+msgctxt "#30121"
+msgid "Alternative streaming is not compatible with OSD menu"
+msgstr ""
+
+msgctxt "#30122"
+msgid "XMLTV URL"
+msgstr ""
+
+msgctxt "#30123"
+msgid "XMLTV type"
+msgstr ""
+
+msgctxt "#30124"
+msgid "Local file"
+msgstr ""
+
+msgctxt "#30125"
+msgid "URL"
+msgstr ""
+
+msgctxt "#30126"
+msgid "FTV (All)"
+msgstr ""
+
+msgctxt "#30127"
+msgid "FTV (Basic)"
+msgstr ""
+
+msgctxt "#30128"
+msgid "Intervalo de Descargas de Archivos "
+msgstr ""
+
+msgctxt "#30129"
+msgid "cada inicio"
+msgstr ""
+
+msgctxt "#30130"
+msgid "cada 12 hrs"
+msgstr ""
+
+msgctxt "#30131"
+msgid "cada 24 hrs"
+msgstr ""
+
+msgctxt "#30132"
+msgid "cada 48 hrs"
+msgstr ""
+
+msgctxt "#30133"
+msgid "UK (Freeview)"
+msgstr ""
+
+msgctxt "#30134"
+msgid "UK (Sky Go)"
+msgstr ""
+
+msgctxt "#30135"
+msgid "USTVNow"
+msgstr ""
+
+msgctxt "#30136"
+msgid "US/UK (Basic)"
+msgstr ""
+
+msgctxt "#30137"
+msgid "** PELIGRO! ** Restablecimiento de la base de datos hara que pierda todos los ajustes!"
+msgstr ""
+
+msgctxt "#30138"
+msgid "Sólo hacerlo si su base de datos se ha dañado!"
+msgstr ""
+
+msgctxt "#30139"
+msgid "Resetear Base de Datos"
+msgstr ""
+
+msgctxt "#30140"
+msgid "Reset"
+msgstr ""
+
+msgctxt "#30141"
+msgid "Skin Javi-Team"
+msgstr ""
+
+msgctxt "#30142"
+msgid "Custom File"
+msgstr ""
+
+msgctxt "#30143"
+msgid "TV JAVI-TEAM"
+msgstr ""
+
+msgctxt "#30144"
+msgid "addons.ini Seleccion"
+msgstr ""
+
+msgctxt "#30145"
+msgid "addons.ini Archivo"
+msgstr ""
+
+msgctxt "#30146"
+msgid "Crpeta de logos"
+msgstr ""
+
+msgctxt "#30147"
+msgid "Directorio por Defecto"
+msgstr ""
+
+msgctxt "#30148"
+msgid "Apariencia"
+msgstr ""
+
+msgctxt "#30149"
+msgid "Refresh on start"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Vaya, lo siento por eso!"
+msgstr ""
+
+msgctxt "#30151"
+msgid "No fue posible cargar los datos del programa,"
+msgstr ""
+
+msgctxt "#30152"
+msgid "comprobar la configuración o intente de nuevo más tarde..."
+msgstr ""
+
+msgctxt "#30153"
+msgid "debido a que los ajustes no son válidos!"
+msgstr ""
+
+msgctxt "#30154"
+msgid "Parece que su skin actual tiene un especial"
+msgstr ""
+
+msgctxt "#30155"
+msgid "versión de la skin Guía no esta hasta la fecha."
+msgstr ""
+
+msgctxt "#30156"
+msgid "Por favor, intente con una skin diferente..."
+msgstr ""
+
+msgctxt "#30157"
+msgid "Parece que la base de datos Guía esta rota."
+msgstr ""
+
+msgctxt "#30158"
+msgid "La base de datos será eliminado y recreada."
+msgstr ""
+
+msgctxt "#30159"
+msgid "Configuración de canal , etc. lamentablemente se ha perdido."
+msgstr ""
+
+#empty strings from id 30160 to 30199
+
+msgctxt "#30200"
+msgid "on [B]%s[/B] in 5 minutes..."
+msgstr ""
+
+msgctxt "#30201"
+msgid "on [B]%s[/B] is starting now..."
+msgstr ""
+
+#empty strings from id 30202 to 30299
+
+msgctxt "#30300"
+msgid "Watch %s"
+msgstr ""
+
+msgctxt "#30301"
+msgid "Recordar"
+msgstr ""
+
+msgctxt "#30302"
+msgid "No Recordar"
+msgstr ""
+
+msgctxt "#30303"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#30304"
+msgid "Elija stream"
+msgstr ""
+
+msgctxt "#30305"
+msgid "Usted puede elegir su propio archivo .strm para jugar , cuando se desea ver el canal,."
+msgstr ""
+
+msgctxt "#30306"
+msgid "Eliminar Stream"
+msgstr ""
+
+msgctxt "#30307"
+msgid "Canales"
+msgstr ""
+
+msgctxt "#30308"
+msgid "Quit"
+msgstr ""
+
+#empty strings from id 30309 to 30399
+
+msgctxt "#30400"
+msgid "Background Update Service"
+msgstr ""
+
+msgctxt "#30401"
+msgid "Service Interval"
+msgstr ""
+
+msgctxt "#30402"
+msgid "2 hrs"
+msgstr ""
+
+msgctxt "#30403"
+msgid "6 hrs"
+msgstr ""
+
+msgctxt "#30404"
+msgid "12 hrs"
+msgstr ""
+
+msgctxt "#30405"
+msgid "24 hrs"
+msgstr ""
+
+#empty strings from id 30406 to 30499
+
+msgctxt "#30500"
+msgid "[B]Edit channel order and visibility[/B]"
+msgstr ""
+
+msgctxt "#30501"
+msgid "Oprima hacia la izquierda para tirar de un canal a cabo , a continuación, moverlo hacia arriba o hacia abajo . Cuando en su lugar , pulse hacia la derecha de nuevo para fijar . Al pulsar sobre un canal en la lista se activarlo o desactivarlo.[CR]En los dispositivos táctiles pulsación larga en un canal de sacarlo , mover la lista hasta el lugar deseado y pulse a continuación de largo en el canal sacó para ponerlo en su nuevo lugar."
+msgstr ""
+
+msgctxt "#30502"
+msgid "Save"
+msgstr ""
+
+msgctxt "#30503"
+msgid "Cancel"
+msgstr ""
+
+#empty strings from id 30504 to 30599
+
+msgctxt "#30600"
+msgid "[B]Setup stream[/B]"
+msgstr ""
+
+msgctxt "#30601"
+msgid ".strm file"
+msgstr ""
+
+msgctxt "#30602"
+msgid "Canales Favoritos"
+msgstr ""
+
+msgctxt "#30603"
+msgid "Addons"
+msgstr ""
+
+msgctxt "#30604"
+msgid "Preview stream"
+msgstr ""
+
+msgctxt "#30605"
+msgid "Save"
+msgstr ""
+
+msgctxt "#30606"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#30607"
+msgid "Stop preview"
+msgstr ""
+
+#empty strings from id 30608 to 30609
+
+msgctxt "#30610"
+msgid "Browse..."
+msgstr ""
+
+msgctxt "#30611"
+msgid "Haga clic en Examinar... a continuación y navegue a su archivo de flujo . Cuando haya elegido su archivo se puede previsualizar la corriente para probar si funciona en XBMC."
+msgstr ""
+
+#empty strings from id 30612 to 30619
+
+msgctxt "#30620"
+msgid "Choose a favourite below. Only [I]PlayMedia[/I] favourites are supported."
+msgstr ""
+
+#empty strings from id 30621 to 30699
+
+msgctxt "#30700"
+msgid "Multiple addons provide this channels.[CR]Choose one to watch the stream."
+msgstr ""
+
+#empty strings from id 30701 to 30799
+#weeb.tv mod
+
+msgctxt "#30800"
+msgid "JSON-EPG URL"
+msgstr ""
+
+msgctxt "#30801"
+msgid "Play channels using the Weeb.Tv addon"
+msgstr ""
+
+msgctxt "#30802"
+msgid "FTV Guide is configured to stream using Weeb.Tv"
+msgstr ""
+
+msgctxt "#30803"
+msgid "addon which is not installed."
+msgstr ""
+
+msgctxt "#30804"
+msgid "Streaming using that addon is now disabled."
+msgstr ""
+
+msgctxt "#30900"
+msgid "Autostart TVGuide cuando kodi Se Ejecute"
+msgstr ""
+
+msgctxt "#31000"
+msgid "Problemas de coneccio"
+msgstr ""
+
+msgctxt "#31001"
+msgid "No fue posible actualizar desde el servidor."
+msgstr ""
+
+msgctxt "#31002"
+msgid "datos locales actuales se mantendrán por ahora..."
+msgstr ""
+
+msgctxt "#80000"
+msgid "My Movies"
+msgstr ""
+
+msgctxt "#80001"
+msgid "My TV Shows"
+msgstr ""
+
+msgctxt "#80002"
+msgid "Video Add-Ons"
+msgstr ""
+
+msgctxt "#80003"
+msgid "On-Demand"
+msgstr ""
