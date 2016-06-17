@@ -18,7 +18,7 @@ item_info_build=%s
 item_info_name=alt_tmp
 item_info_from=pageUrl
 #item_info_convert=getInfo('%s','.*function\s+ajajsaalsjkas.*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*','@REFERER@','s1|s2|s3|s4')
-item_info_convert=getInfo('%s','.*?function\s*?\w{10,15}?\(\)\{.*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?','@REFERER@','s1|s2|s3|s4')
+item_info_convert=getInfo('%s','.*?BannerAds.*?function\s*?\w{10,20}?\(\)\{.*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?\w+\s*=\s*.*?'([^']+).*?','@REFERER@','s1|s2|s3|s4')
 item_info_build=%s
 
 item_info_name=xaf1
