@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.ftvguide" name="TVGuia JAVI-TEAM" version="3.0.0" provider-name="JAVI_TEAM">
+<addon id="script.ftvguide" name="[COLOR lime]TVGuia JAVI-TEAM[/COLOR]" version="3.0.1" provider-name="[COLOR lime]JAVI_TEAM[/COLOR]">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -9,8 +9,8 @@
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
-		<description lang="es">TV Guide con XMLTV y soporte para streaming</description>
+		<summary lang="es">[COLOR lime]TV Guide JAVI TEAM[/COLOR]</summary>
+		<description lang="es">[COLOR orange]Guia de TV para toda la familia , agradecimiento a (PLD) por su gran apoyo[/COLOR]</description>
 		<disclaimer lang="en">FTV Guide is based on the original TV Guide addon by twinther.</disclaimer>
 		<language></language>
 		<platform>all</platform>
