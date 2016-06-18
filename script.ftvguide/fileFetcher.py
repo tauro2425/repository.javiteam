@@ -26,7 +26,7 @@ import urllib2
 import datetime
 import zlib
 
-MAIN_URL = 'http://forojaviream.netne.net/'
+MAIN_URL = 'http://javiteam-guia.esy.es/download/guia/'
 
 
 class FileFetcher(object):

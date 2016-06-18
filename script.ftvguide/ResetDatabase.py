@@ -28,7 +28,7 @@ import xbmcaddon
 
 def deleteDB():
     try:
-        xbmc.log("[script.ftvguide] Deleting database...", xbmc.LOGDEBUG)
+        xbmc.log("[TVGuia JAVI-TEAM] Borrando Base de Datos...", xbmc.LOGDEBUG)
         dbPath = xbmc.translatePath(xbmcaddon.Addon(id = 'script.ftvguide').getAddonInfo('profile'))
         dbPath = os.path.join(dbPath, 'source.db')
 
@@ -37,14 +37,14 @@ def deleteDB():
         passed = not os.path.exists(dbPath)
 
         if passed:
-            xbmc.log("[script.ftvguide] Borrando base de Datos...Espere", xbmc.LOGDEBUG)
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de Datos...Espere", xbmc.LOGDEBUG)
         else:
-            xbmc.log("[script.ftvguide] Borrando base de Datos...fallido", xbmc.LOGDEBUG)
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de Datos...fallido", xbmc.LOGDEBUG)
 
         return passed
 
     except Exception, e:
-        xbmc.log('[script.ftvguide] Borrando base de Datos...Excepcion', xbmc.LOGDEBUG)
+        xbmc.log('[TVGuia JAVI-TEAM] Borrando base de Datos...Excepcion', xbmc.LOGDEBUG)
         return False
 
 def delete_file(filename):
@@ -63,4 +63,90 @@ if __name__ == '__main__':
     else:
         d = xbmcgui.Dialog()
         d.ok('Javi.Team Guide', 'Fallo al borrar base de datos', 'base de datos bloqueada', 'Reinicie kodi de nuevo')
+		
+import os
+import xbmc
+import xbmcgui
+import xbmcaddon
+
+def deleteDB():
+    try:
+        xbmc.log("[TVGuia JAVI-TEAM] Borrando Base de Datos...", xbmc.LOGDEBUG)
+        dbPath = xbmc.translatePath(xbmcaddon.Addon(id = 'script.ftvguide').getAddonInfo('profile'))
+        dbPath = os.path.join(dbPath, 'addons.ini')
+
+        delete_file(dbPath)
+
+        passed = not os.path.exists(dbPath)
+
+        if passed:
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de CANALES...Espere", xbmc.LOGDEBUG)
+        else:
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de CANALES...fallido", xbmc.LOGDEBUG)
+
+        return passed
+
+    except Exception, e:
+        xbmc.log('[TVGuia JAVI-TEAM] Borrando base de CANALES...Excepcion', xbmc.LOGDEBUG)
+        return False
+
+def delete_file(filename):
+    tries = 10
+    while os.path.exists(filename) and tries > 0:
+        try:
+            os.remove(filename)
+            break
+        except:
+            tries -= 1
+
+if __name__ == '__main__':
+    if deleteDB():
+        d = xbmcgui.Dialog()
+        d.ok('Javi.Team Guide', 'La base de CANALES ha sido borrada', 'Se vuelve a crear la próxima vez que inicie la guía')
+    else:
+        d = xbmcgui.Dialog()
+        d.ok('Javi.Team Guide', 'Fallo al borrar base de CANALES', 'base de CANALES bloqueada', 'Reinicie kodi de nuevo')
+
+import os
+import xbmc
+import xbmcgui
+import xbmcaddon
+
+def deleteDB():
+    try:
+        xbmc.log("[TVGuia JAVI-TEAM] Borrando Base de Datos...", xbmc.LOGDEBUG)
+        dbPath = xbmc.translatePath(xbmcaddon.Addon(id = 'script.ftvguide').getAddonInfo('profile'))
+        dbPath = os.path.join(dbPath, 'guide.xmltv')
+
+        delete_file(dbPath)
+
+        passed = not os.path.exists(dbPath)
+
+        if passed:
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de EPG...Espere", xbmc.LOGDEBUG)
+        else:
+            xbmc.log("[TVGuia JAVI-TEAM] Borrando base de EPG...fallido", xbmc.LOGDEBUG)
+
+        return passed
+
+    except Exception, e:
+        xbmc.log('[TVGuia JAVI-TEAM] Borrando base de EPG...Excepcion', xbmc.LOGDEBUG)
+        return False
+
+def delete_file(filename):
+    tries = 10
+    while os.path.exists(filename) and tries > 0:
+        try:
+            os.remove(filename)
+            break
+        except:
+            tries -= 1
+
+if __name__ == '__main__':
+    if deleteDB():
+        d = xbmcgui.Dialog()
+        d.ok('Javi.Team Guide', 'La base de EPG ha sido borrada', 'Se vuelve a crear la próxima vez que inicie la guía')
+    else:
+        d = xbmcgui.Dialog()
+        d.ok('Javi.Team Guide', 'Fallo al borrar base de EPG', 'base de EPG bloqueada', 'Reinicie kodi de nuevo')		
 
