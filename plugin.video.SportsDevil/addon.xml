@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="plugin.video.SportsDevil"
-  version="[COLOR blue]2.0.4.6[/COLOR]"
+  version="2.0.4.6"
   name="[COLOR blue]SportsDevil.ByPld[/COLOR]"
   provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
   <requires>
