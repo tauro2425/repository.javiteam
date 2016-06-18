@@ -20,7 +20,7 @@
 	 <import addon="plugin.video.SportsDevil" version="2.0.4.6"/>
 	 <import addon="plugin.video.pelisalacarta" version="4.0.9"/>
 	 <import addon="plugin.stream.vaughnlive.tv" version="0.1.8"/>
-	 <import addon="script.ftvguide" version="3.0.3"/>
+	 <import addon="script.ftvguide" version="3.0.4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

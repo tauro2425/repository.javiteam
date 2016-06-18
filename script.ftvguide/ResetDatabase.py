@@ -59,10 +59,10 @@ def delete_file(filename):
 if __name__ == '__main__':
     if deleteDB():
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'La base de datos ha sido borrada', 'Se vuelve a crear la próxima vez que inicie la guía')
+        d.ok('Javi.Team Guide', '[COLOR yellow]La base de datos ha sido borrada[/COLOR]', '[COLOR yellow]Se vuelve a crear la próxima vez que inicie la guía[/COLOR]')
     else:
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'Fallo al borrar base de datos', 'base de datos bloqueada', 'Reinicie kodi de nuevo')
+        d.ok('Javi.Team Guide', '[COLOR red]Fallo al borrar base de datos[/COLOR]', '[COLOR red]base de datos bloqueada[/COLOR]', '[COLOR red]Reinicie kodi de nuevo[/COLOR]')
 		
 import os
 import xbmc
@@ -102,10 +102,10 @@ def delete_file(filename):
 if __name__ == '__main__':
     if deleteDB():
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'La base de CANALES ha sido borrada', 'Se vuelve a crear la próxima vez que inicie la guía')
+        d.ok('Javi.Team Guide', '[COLOR yellow]La base de CANALES ha sido borrada[/COLOR]', '[COLOR yellow]Se vuelve a crear la próxima vez que inicie la guía[/COLOR]')
     else:
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'Fallo al borrar base de CANALES', 'base de CANALES bloqueada', 'Reinicie kodi de nuevo')
+        d.ok('Javi.Team Guide', '[COLOR red]Fallo al borrar base de CANALES[/COLOR]', '[COLOR red]base de CANALES bloqueada[/COLOR]', '[COLOR red]Reinicie kodi de nuevo[/COLOR]')
 
 import os
 import xbmc
@@ -145,8 +145,8 @@ def delete_file(filename):
 if __name__ == '__main__':
     if deleteDB():
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'La base de EPG ha sido borrada', 'Se vuelve a crear la próxima vez que inicie la guía')
+        d.ok('Javi.Team Guide', '[COLOR yellow]La base de EPG ha sido borrada[/COLOR]', '[COLOR yellow]Se vuelve a crear la próxima vez que inicie la guía[/COLOR]')
     else:
         d = xbmcgui.Dialog()
-        d.ok('Javi.Team Guide', 'Fallo al borrar base de EPG', 'base de EPG bloqueada', 'Reinicie kodi de nuevo')		
+        d.ok('Javi.Team Guide', '[COLOR red]Fallo al borrar base de EPG', '[COLOR red]base de EPG bloqueada', '[COLOR red]Reinicie kodi de nuevo[/COLOR]')		
 
