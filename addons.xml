@@ -74,10 +74,11 @@
      <import addon="script.module.livestreamer" optional="true"/>
      <import addon="script.module.pyamf" optional="true"/>
 	 <import addon="plugin.player.javiteam" version="1.0.2"/>
-	 <import addon="plugin.video.SportsDevil" version="2.0.4.7"/>
+	 <import addon="plugin.video.SportsDevil" version="2.0.4.8"/>
 	 <import addon="plugin.video.pelisalacarta" version="4.0.9"/>
 	 <import addon="plugin.stream.vaughnlive.tv" version="0.1.8"/>
 	 <import addon="script.ftvguide" version="3.0.4"/>
+	 <import addon="plugin.video.tvalacarta" version="4.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -120,7 +121,7 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2.0.4.7"
+  version="2.0.4.8"
   name="[COLOR blue]SportsDevil.ByPld[/COLOR]"
   provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
   <requires>
@@ -139,6 +140,33 @@
     <description>[COLOR lime]ESTE PLUGIN A SIDO ACTUALIZADO POR EL GRUPO Y COLABORADORES DE[/COLOR] [COLOR blue]PLD[/COLOR]</description>
 	<description>[COLOR lime]FECHA ACTUALIZACION 18-06-2016[/COLOR]</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.0.1"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.youtube.dl" version="15.1223.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV from your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
 
