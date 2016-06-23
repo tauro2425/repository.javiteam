@@ -2155,29 +2155,51 @@ def play_playlist(name, mu_playlist,queueVideo=None):
         if addon.getSetting('ask_playlist_items') == 'true' and not queueVideo :
             import urlparse
             names = []
+            iloop=0
             for i in mu_playlist:
-                d_name=urlparse.urlparse(i).netloc
-                if d_name == '':
-                    names.append(name)
-                else:
+                if '$$lsname=' in i:
+                    d_name=i.split('$$lsname=')[1]
                     names.append(d_name)
+                    mu_playlist[iloop]=i.split('$$lsname=')[0]
+                else:
+                    d_name=urlparse.urlparse(i).netloc
+                    if d_name == '':
+                        names.append(name)
+                    else:
+                        names.append(d_name)
+                iloop+=1
             dialog = xbmcgui.Dialog()
-            index = dialog.select('Abriendo Opciones JAVI / TEAM', names)
+            index = dialog.select('Choose a video source', names)
             if index >= 0:
+                playname=names[index]
+                print 'playname',playname
                 if "&mode=19" in mu_playlist[index]:
-                    #playsetresolved (urlsolver(mu_playlist[index].replace('&mode=19','')),name,iconimage,True)
-                    xbmc.Player().play(urlsolver(mu_playlist[index].replace('&mode=19','').replace(';','')))
+                        #playsetresolved (urlsolver(mu_playlist[index].replace('&mode=19','')),name,iconimage,True)
+                    liz = xbmcgui.ListItem(playname, iconImage=iconimage)
+                    liz.setInfo(type='Video', infoLabels={'Title':playname})
+                    liz.setProperty("IsPlayable","true")
+                    urltoplay=urlsolver(mu_playlist[index].replace('&mode=19','').replace(';',''))
+                    liz.setPath(urltoplay)
+                    xbmc.Player().play(urltoplay,liz)
                 elif "$doregex" in mu_playlist[index] :
 #                    print mu_playlist[index]
                     sepate = mu_playlist[index].split('&regexs=')
 #                    print sepate
                     url,setresolved = getRegexParsed(sepate[1], sepate[0])
                     url2 = url.replace(';','')
-                    xbmc.Player().play(url2)
+                    liz = xbmcgui.ListItem(playname, iconImage=iconimage)
+                    liz.setInfo(type='Video', infoLabels={'Title':playname})
+                    liz.setProperty("IsPlayable","true")
+                    liz.setPath(url2)
+                    xbmc.Player().play(url2,liz)
 
                 else:
                     url = mu_playlist[index]
-                    xbmc.Player().play(url)
+                    liz = xbmcgui.ListItem(playname, iconImage=iconimage)
+                    liz.setInfo(type='Video', infoLabels={'Title':playname})
+                    liz.setProperty("IsPlayable","true")
+                    liz.setPath(url)
+                    xbmc.Player().play(url,liz)
         elif not queueVideo:
             #playlist = xbmc.PlayList(1) # 1 means video
             playlist.clear()
@@ -2434,7 +2456,7 @@ def addLink(url,name,iconimage,fanart,description,genre,date,showcontext,playlis
                 u += "url="+urllib.quote_plus(url)+"&mode="+mode
             else:
                 u += "mode=13&name=%s&playlist=%s" %(urllib.quote_plus(name), urllib.quote_plus(str(playlist).replace(',','||')))
-                name = name + '[COLOR orange] (' + str(len(playlist)) + ' multilink )[/COLOR]'
+                name = name + '[COLOR magenta] (' + str(len(playlist)) + ' items )[/COLOR]'
                 play_list = True
         else:
             u += "url="+urllib.quote_plus(url)+"&mode="+mode
@@ -2884,7 +2906,7 @@ elif mode==17 or mode==117:
 #            print newcopy
                 
 #            ln+='</item>'
-        #print 'ln',ln
+        
         addon_log(repr(ln))
         getData('','',ln)
         xbmcplugin.endOfDirectory(int(sys.argv[1]))
