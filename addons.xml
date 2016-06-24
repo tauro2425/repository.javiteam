@@ -186,7 +186,7 @@
 <addon id="script.ftvguide" name="[COLOR lime]TVGuia JAVI-TEAM[/COLOR]" version="3.0.4" provider-name="[COLOR lime]JAVI_TEAM[/COLOR]">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.simplejson" version="3.3.1"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
             <provides>video</provides>
