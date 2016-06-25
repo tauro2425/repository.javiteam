@@ -74,10 +74,10 @@
      <import addon="script.module.livestreamer" optional="true"/>
      <import addon="script.module.pyamf" optional="true"/>
 	 <import addon="plugin.player.javiteam" version="1.0.2"/>
-	 <import addon="plugin.video.SportsDevil" version="2.0.4.8"/>
+	 <import addon="plugin.video.SportsDevil" version="2.0.4.9"/>
 	 <import addon="plugin.video.pelisalacarta" version="4.0.9"/>
 	 <import addon="plugin.stream.vaughnlive.tv" version="0.1.8"/>
-	 <import addon="script.ftvguide" version="3.0.5"/>
+	 <import addon="script.ftvguide" version="3.0.7"/>
 	 <import addon="plugin.video.tvalacarta" version="4.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -121,14 +121,16 @@
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2.0.4.8"
+  version="2.0.4.9"
   name="[COLOR blue]SportsDevil.ByPld[/COLOR]"
   provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
    <import addon="script.module.requests" />
    <import addon="script.module.livestreamer" />
-   <import addon="script.module.pydevd" optional="true"/>
+   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
   </requires>
   <extension
     point="xbmc.python.pluginsource"
@@ -183,7 +185,7 @@
 	</extension>
 </addon>
 
-<addon id="script.ftvguide" name="[COLOR lime]TVGuia JAVI-TEAM[/COLOR]" version="3.0.5" provider-name="[COLOR lime]JAVI_TEAM[/COLOR]">
+<addon id="script.ftvguide" name="[COLOR lime]TVGuia JAVI-TEAM[/COLOR]" version="3.0.7" provider-name="[COLOR lime]JAVI_TEAM[/COLOR]">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

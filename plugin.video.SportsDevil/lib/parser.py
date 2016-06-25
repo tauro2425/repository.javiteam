@@ -21,6 +21,7 @@ import customConversions as cc
 from utils import decryptionUtils as crypt
 from utils import datetimeUtils as dt
 from utils import rowbalance as rb
+from utils import wasteg as getsaw
 
 from utils.fileUtils import findInSubdirectory, getFileContent, getFileExtension
 from utils.scrapingUtils import findVideoFrameLink, findContentRefreshLink, findRTMP, findJS, findPHP, getHostName, findEmbedPHPLink
@@ -660,6 +661,11 @@ class Parser(object):
                 
             elif command == 'rowbalance':
                 src = rb.get(src)
+
+            elif command == 'wasteg':
+                paramArr = params.split(',')
+                ref = str(paramArr[1])
+                src = getsaw.compose(ref, src)
 
             elif command == 'urlMerge':
                 src = cc.urlMerge(params, src)

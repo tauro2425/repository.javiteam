@@ -148,21 +148,21 @@ item_info_build=%s
 ## common code for catchers 1-3 ##
 
 item_info_name=tk1
-item_info_from=uri || tk || alt_tk
+item_info_from=tk || alt_tk || uri
 item_info_convert=decodeBase64
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 item_info_name=c1
-item_info_from=cod1 || ssx1 || alt_ssx1
+item_info_from=ssx1 || alt_ssx1 || cod1
 item_info_convert=quote('%s')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 item_info_name=c2
-item_info_from=cod2 || ssx4 || alt_ssx4
+item_info_from=ssx4 || alt_ssx4 || cod2
 item_info_convert=quote('%s')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 item_info_name=dom1
@@ -180,7 +180,7 @@ item_info_name=file.tmp
 item_info_from=dom2+tk2+?callback=jQuery&v_cod1='+c1+'&v_cod2='+c2+'
 item_info_convert=getInfo('%s','.*(http.*?\.m3u8).*','@pageUrl@')
 item_info_convert=replace('%s','\','')
-#item_info_convert=debug
+item_info_convert=debug
 item_info_build=%s
 
 
@@ -199,7 +199,7 @@ item_info_build=%s
 
 item_info_name=file
 item_info_from=file.tmp || tk1 || file.tmp2
-item_info_convert=debug
+#item_info_convert=debug
 item_info_build=%s
 
 
