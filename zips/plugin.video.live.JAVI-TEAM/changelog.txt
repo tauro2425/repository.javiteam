@@ -1,3 +1,5 @@
+Version 2.4.3
+bug fixed in playlist in dialogue mode in mix regex and unregex mode
 Version 2.4.2
 Name for multiple links
 Version 2.4.1

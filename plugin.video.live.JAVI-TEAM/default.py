@@ -2195,6 +2195,7 @@ def play_playlist(name, mu_playlist,queueVideo=None):
 
                 else:
                     url = mu_playlist[index]
+                    url=url.split('&regexs=')[0]
                     liz = xbmcgui.ListItem(playname, iconImage=iconimage)
                     liz.setInfo(type='Video', infoLabels={'Title':playname})
                     liz.setProperty("IsPlayable","true")
