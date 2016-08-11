@@ -1,3 +1,19 @@
+Version 2.5.1
+unicode support in pyfunction,and logging fix by gujal
+Version 2.5.0
+sucuri support, session/cookie correction
+Version 2.4.9
+sucuri support
+Version 2.4.8
+regex in external
+Version 2.4.7
+removed uploaded.net from urlresolver
+Version 2.4.6
+removed uploaded.net from urlresolver
+Version 2.4.5
+Support for Python function in listrepeat regex
+Version 2.4.4
+Added support for liveresolver
 Version 2.4.3
 bug fixed in playlist in dialogue mode in mix regex and unregex mode
 Version 2.4.2
