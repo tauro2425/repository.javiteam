@@ -26,7 +26,7 @@ import urllib2
 import datetime
 import zlib
 
-MAIN_URL = 'http://javiteam.grupo-pld.com/download/guia/'
+MAIN_URL = 'https://dl.dropbox.com/s/kkrd09e52pacd0p/guide.xmltv'
 
 
 class FileFetcher(object):
