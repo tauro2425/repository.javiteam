@@ -7,168 +7,56 @@ item_info_build=DinoZap - %s
 item_info_name=pageUrl
 item_info_from=@PARAM1@
 item_info_convert=getInfo('http://%s','.*src="([^"]+)".*','@REFERER@')
-#item_info_convert=debug
 item_info_build=%s
-
-
-## catcher variant 1 ##
 
 item_info_name=_1
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?url.\s*\1.*','@REFERER@','junk|tk')
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]{,60})".*?url.\s*(\w+).*?\3\s*=\s*document.getElementById\('\1'\).value','@REFERER@','junk|tk|j2')
 item_info_build=%s
 
 item_info_name=_2
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?cod1.\s*\1.*','@REFERER@','junk|ssx1')
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]{20,})".*?cod1.\s*(\w+).*?\3\s*=\s*document.getElementById\('\1'\).value','@REFERER@','junk|ssx1|j2')
 item_info_build=%s
 
 item_info_name=_3
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?cod2.\s*\1.*','@REFERER@','junk|ssx4')
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]{20,})".*?cod2.\s*(\w+).*?\3\s*=\s*document.getElementById\('\1'\).value*','@REFERER@','junk|ssx4|j2')
 item_info_build=%s
 
-
-## catcher variant 2 ##
-
-item_info_name=tmp
+item_info_name=_4
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*function\s+\w+\(\)\{\s*\w+\s*=\s*document.getElementById\('([^']+).*?\w+\s*=\s*document.getElementById\('([^']+).*?\w+\s*=\s*document.getElementById\('([^']+).*?\w+\s*=\s*document.getElementById\('([^']+).*','@REFERER@','s1|s2|s3|s4')
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?url.\s*\1.*','@REFERER@','junk|_tk')
 item_info_build=%s
 
-item_info_name=xaf1
-item_info_from=s1
-#item_info_convert=debug
-item_info_build=.*id="%s"\s*value="([^'"]*)
-
-item_info_name=gada
-item_info_from=s2
-#item_info_convert=debug
-item_info_build=.*id="%s"\s*value="([^'"]*)
-
-item_info_name=thas
-item_info_from=s3
-#item_info_convert=debug
-item_info_build=.*id="%s"\s*value="([^'"]*)
-
-item_info_name=tkne
-item_info_from=s4
-#item_info_convert=debug
-item_info_build=.*id="%s"\s*value="([^'"]*)
-
-item_info_name=alt_ssx1
+item_info_name=_5
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','@xaf1@','@REFERER@')
-#item_info_convert=debug
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?cod1.\s*\1.*','@REFERER@','junk|_ssx1')
 item_info_build=%s
 
-item_info_name=alt_ssx4
+item_info_name=_6
 item_info_from=pageUrl
-item_info_convert=getInfo('%s','@gada@','@REFERER@')
-#item_info_convert=debug
+item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^'"]+)".*?cod2.\s*\1.*','@REFERER@','junk|_ssx4')
 item_info_build=%s
-
-item_info_name=alt_tk
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@tkne@','@REFERER@')
-#item_info_convert=debug
-item_info_build=%s
-
-
-## catcher variant 3 ##
-
-item_info_name=tmp1
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*unescape\(\'([^\']+).*','@REFERER@')
-item_info_build=%s
-
-item_info_name=tmp1.1
-item_info_from=tmp1
-item_info_convert=parseText('%s','.*ajax.*v_cod1:\s*(\w+).*v_cod2:\s*(\w+).*url:\s*(\w+).*','s1|s2|s3')
-item_info_build=%s
-
-item_info_name=rex1
-item_info_from=s1
-item_info_build=.*%s\s*=\s*document.getElementById\('([^']+)
-
-item_info_name=cod1.tmp
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex1@','@REFERER@')
-item_info_build=%s
-
-item_info_name=rex1.1
-item_info_from=cod1.tmp
-item_info_build=.*input\s+type="hidden"\s+id="%s"\s+value="(.*?)".*
-
-item_info_name=cod1
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex1.1@','@REFERER@')
-#item_info_convert=debug
-item_info_build=%s
-
-item_info_name=rex2
-item_info_from=s2
-item_info_build=.*%s\s*=\s*document.getElementById\('([^']+)
-
-item_info_name=cod2.tmp
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex2@','@REFERER@')
-item_info_build=%s
-
-item_info_name=rex2.1
-item_info_from=cod2.tmp
-item_info_build=.*input\s+type="hidden"\s+id="%s"\s+value="(.*?)".*
-
-item_info_name=cod2
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex2.1@','@REFERER@')
-#item_info_convert=debug
-item_info_build=%s
-
-item_info_name=rex3
-item_info_from=s3
-item_info_build=.*%s\s*=\s*document.getElementById\('([^']+)
-
-item_info_name=uri.tmp
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex3@','@REFERER@')
-item_info_build=%s
-
-item_info_name=rex3.1
-item_info_from=uri.tmp
-item_info_build=.*input\s+type="hidden"\s+id="%s"\s+value="(.*?)".*
-
-item_info_name=uri
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','@rex3.1@','@REFERER@')
-#item_info_convert=debug
-item_info_build=%s
-
-
-## common code for catchers 1-3 ##
 
 item_info_name=tk1
-item_info_from=uri || tk || alt_tk
+item_info_from=_tk || tk
 item_info_convert=decodeBase64
-#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=c1
-item_info_from=cod1 || ssx1 || alt_ssx1
+item_info_from=_ssx1 || ssx1
 item_info_convert=quote('%s')
-#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=c2
-item_info_from=cod2 || ssx4 || alt_ssx4
+item_info_from=_ssx4 || ssx4
 item_info_convert=quote('%s')
-#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=dom1
 item_info_from=pageUrl
 item_info_convert=parseText('%s','(http://(?:www.)?\w+.\w+/).*')
-#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=dom2
@@ -178,33 +66,13 @@ item_info_build=%s
 
 item_info_name=file.tmp
 item_info_from=dom2+tk2+?callback=jQuery&v_cod1='+c1+'&v_cod2='+c2+'
-item_info_convert=getInfo('%s','.*(http.*?\.m3u8).*','@pageUrl@')
+item_info_convert=getInfo('%s','.*(http[^"']+\.m3u8[^"'@]*).*','@pageUrl@')
 item_info_convert=replace('%s','\','')
-#item_info_convert=debug
-item_info_build=%s
-
-
-## catcher variant 4 ##
-
-item_info_name=tmp2
-item_info_from=pageUrl
-item_info_convert=getInfo('%s','.*var\s*(\w+)\s*=\s*"([^"]+).*result2.*\1.*','@REFERER@','junk|tk3')
-item_info_build=%s
-
-item_info_name=file.tmp2
-item_info_from=tk3
-item_info_convert=decodeBase64
-#item_info_convert=debug
 item_info_build=%s
 
 item_info_name=file
-item_info_from=file.tmp || tk1 || file.tmp2
-item_info_convert=debug
+item_info_from=file.tmp || tk1
 item_info_build=%s
-
-
-
-## common final code ##
 
 item_info_name=ref
 item_info_from=pageUrl
@@ -213,7 +81,7 @@ item_info_convert=quote('%s')
 item_info_build=%s
 
 #item_info_name=url
-#item_info_from=file+'|Referer='+ref+'&User-Agent=Mozilla/5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/50.0.2661.102%20Safari/537.36
+#item_info_from=file+'|Referer='+ref+'&User-Agent=Mozilla/5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/52.0.2743.116%20Safari/537.36
 #item_info_build=%s
 
 item_info_name=ref4
@@ -222,7 +90,7 @@ item_info_convert=quote('%s')
 item_info_build=%s
 
 item_info_name=url4
-item_info_from=hlsvariant://'+file+'|Accept-Encoding=gzip,deflate&Referer='+ref4+'&User-Agent=Mozilla/5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/50.0.2661.102%20Safari/537.36
+item_info_from=hlsvariant://'+file+'|Referer='+ref4+'&User-Agent=Mozilla/5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/52.0.2743.116%20Safari/537.36
 item_info_convert=encodeBase64
 item_info_build=%s
 
@@ -232,5 +100,5 @@ item_info_convert=quote('%s')
 item_info_build=%s
 
 item_info_name=url
-item_info_from=http://127.0.0.1:19000/livestreamer/'+url4+'
+item_info_from=http://127.0.0.1:19000/livestreamer/'+url4+'|seekable=0
 item_info_build=%s
